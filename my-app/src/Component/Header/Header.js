@@ -8,21 +8,17 @@ const Header = () => {
           <div> 
             <img   className="w-20 " src={img}/>
           </div>
+          <div> 
+            <h1 className="font-extrabold"> Keep your pace with the world .</h1>
+          </div>
           <div className="text-white text-2xl ">
             
 
 <NavLink to="/home"activeStyle={LinkColor}>  Home</NavLink>
-<NavLink to="/about"activeStyle={LinkColor}> About us </NavLink>
 <NavLink to="/courses"activeStyle={LinkColor}>  Courses</NavLink>
-<NavLink to="/tutors"activeStyle={LinkColor}>  Tutors</NavLink>
-{/* <NavLink to="/faq"activeStyle={LinkColor}>  None</NavLink>
-<NavLink to="/faq"activeStyle={LinkColor}>  None</NavLink> */}
+<NavLink to="/checkout"activeStyle={LinkColor}> Checkout </NavLink>
+<NavLink to="/about"activeStyle={LinkColor}> About us </NavLink>
 
-            {/* <a  href="">Home </a>
-            <a className='x-5' href=""> About us</a>
-            <a href=""> Courses</a>
-            <a href=""> Tutors</a>
-            <a href=""> None</a> */}
           </div>
         </div>
     );

@@ -6,8 +6,8 @@ import Body  from './Component/Body/Body';
 import Footer from './Component/Footer/Footer';
 import None from './Component/None/None';
 import Courses from './Component/Courses/Courses';
-import Tutors from './Component/Tutors/Tutors';
 import About from './Component/About/About';
+import Checkout from './Component/Checkout/Checkout';
 function App() {
   return (
     <div className="App">
@@ -28,9 +28,9 @@ function App() {
             <Courses></Courses>
              <Footer></Footer>
           </Route>
-          <Route  path='/tutors'>
+          <Route  path='/checkout'>
              <Header></Header>
-             <Tutors></Tutors>
+             <Checkout></Checkout>
              <Footer></Footer>
           </Route>
           <Route  path='/about'>
@@ -38,7 +38,7 @@ function App() {
              <About></About>
              <Footer></Footer>
           </Route>
-          <Route  path='*'>
+          <Route   path='*'>
              <Header></Header>
              <None></None>
              <Footer></Footer>
