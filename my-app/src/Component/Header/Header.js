@@ -1,10 +1,13 @@
 import React from 'react';
 import img from '../../images/Teach_Yourself_logo.png';
+
 import { NavLink } from 'react-router-dom';
+import "./Header.css"
 const Header = () => {
   const LinkColor={ fontWeight: "bold", color: "red"};
+  
     return (
-        <div className="flex justify-between p-8 bg-gray-400 items-center">
+        <div className='background' className="flex justify-between p-8 bg-gray-400 items-center">
           <div> 
             <img   className="w-20 " src={img}/>
           </div>
@@ -16,7 +19,7 @@ const Header = () => {
 
 <NavLink to="/home"activeStyle={LinkColor}>  Home</NavLink>
 <NavLink to="/courses"activeStyle={LinkColor}>  Courses</NavLink>
-<NavLink to="/review"activeStyle={LinkColor}> Review  </NavLink>
+<NavLink to="/contact"activeStyle={LinkColor}> Contact  </NavLink>
 <NavLink to="/about"activeStyle={LinkColor}> About us </NavLink>
 
           </div>

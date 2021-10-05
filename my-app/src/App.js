@@ -7,8 +7,9 @@ import Footer from './Component/Footer/Footer';
 import None from './Component/None/None';
 import Courses from './Component/Courses/Courses';
 import About from './Component/About/About';
-import Reveiw from './Component/Review/Reveiw';
 import Details from './Details/Details';
+import Contact from './Component/Review/Contact';
+
 // import Checkout from './Component/Checkout/Checkout';
 function App() {
   return (
@@ -32,10 +33,10 @@ function App() {
             <Courses></Courses>
             
           </Route>
-          <Route  path='/review'>
+          <Route  path='/contact'>
             
              {/* <Checkout></Checkout> */}
-             <Reveiw></Reveiw>
+             <Contact></Contact>
              
           </Route>
           <Route path='/detail/:id'>

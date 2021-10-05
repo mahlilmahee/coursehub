@@ -1,12 +1,16 @@
 import React from 'react';
 import img from '../../images/Teach_Yourself_logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { faTwitter,faFacebook,faYoutube,faInstagram,faReddit } from '@fortawesome/free-brands-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core'
+
 
 
 const Footer = () => {
+    //   connecting the input with button 
+    const handlingbutton =()=>{
+        const event =document.getElementById('input');
+        event.value='Thanks';}
+
     return (
         <div className='bg-gray-900 text-white '>
             {/* addign two parts of a footer here  */}
@@ -16,7 +20,9 @@ const Footer = () => {
                 
             </div>
             <div>
-                <span>Subscribe : <input type='email' placeholder="subscribe us here "/></span>
+                <span>Subscribe : <input id="input" type='email' className="rounded-lg text-black" placeholder="subscribe us here "/>
+                 <button onClick={handlingbutton} className='bg-green-400  rounded-lg p-2 ms-2'>Send</button>
+                </span>
             </div>
             <div>
              <p> mail-us: <small>findyourtalent@gmail.com</small></p>
