@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6c428279.chunk.css",
+    "main.js": "/static/js/main.aae192dd.chunk.js",
+    "main.js.map": "/static/js/main.aae192dd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2236dd60.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2236dd60.js.map",
+    "static/js/2.f84d6c76.chunk.js": "/static/js/2.f84d6c76.chunk.js",
+    "static/js/2.f84d6c76.chunk.js.map": "/static/js/2.f84d6c76.chunk.js.map",
+    "static/js/3.c855c6be.chunk.js": "/static/js/3.c855c6be.chunk.js",
+    "static/js/3.c855c6be.chunk.js.map": "/static/js/3.c855c6be.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6c428279.chunk.css.map": "/static/css/main.6c428279.chunk.css.map",
+    "static/js/2.f84d6c76.chunk.js.LICENSE.txt": "/static/js/2.f84d6c76.chunk.js.LICENSE.txt",
+    "static/media/Teach_Yourself_logo.f5077122.png": "/static/media/Teach_Yourself_logo.f5077122.png",
+    "static/media/divimgae.6e469e28.jpg": "/static/media/divimgae.6e469e28.jpg",
+    "static/media/images (1).c55531c7.jpg": "/static/media/images (1).c55531c7.jpg",
+    "static/media/images.27774639.jpg": "/static/media/images.27774639.jpg",
+    "static/media/unnamed.40789a72.jpg": "/static/media/unnamed.40789a72.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2236dd60.js",
+    "static/js/2.f84d6c76.chunk.js",
+    "static/css/main.6c428279.chunk.css",
+    "static/js/main.aae192dd.chunk.js"
+  ]
+}

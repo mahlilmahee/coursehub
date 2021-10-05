@@ -5,7 +5,7 @@ const Contact = () => {
       const Submit =document.getElementById("ami");
               Submit.value='We will soon contact with you  ';
     }
-    // const  style={  backgroundImage: `url(${img})`,noRepeat:"none"}; 
+   
     return (
         <div>
            <div className='grid grid-cols-2 gap-4 items-center'> 
