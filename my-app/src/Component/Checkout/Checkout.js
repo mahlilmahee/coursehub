@@ -22,7 +22,8 @@ const Checkout = (props) => {
            
             <div> <h2>
                 Total :{ total} </h2></div>
-                <button style={button} className=""> Procced to checkout </button>
+                {props.children}
+              {/* {  <button style={button} onClick={()=>props.handilingCourse} className=""> Procced to checkout </button>} */}
         </div>
     );
 };

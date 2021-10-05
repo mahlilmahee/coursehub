@@ -2,9 +2,8 @@ import React from 'react';
 import { useState ,useEffect} from 'react';
 import Checkout from '../Checkout/Checkout';
 import Course from '../Course/Course';
-import { useHistory } from 'react-router-dom';
 import { addtoDataBase } from '../../Database/Database';
-
+import img from "../../images/divimgae.jpg";
 const Body = () => {
   const [cart,setCart]=useState([]);
     
@@ -29,9 +28,31 @@ const Body = () => {
    setCart(newArray);
    addtoDataBase(keyword)
  }
- const history =useHistory
+ const button ={
+  color:'white',
+  backgroundColor:'black',
+  width:'150px',
+  heigth:'40px',
+  borderRadius:'20px',
+  marginLeft:'5px',
+  margin:'5px',
+  padding:'2px '
+};
+ const handlingcourse =()=>{
+   const newcourse =[];
+   setCart(newcourse);
+   setCourse(newcourse);
+   const divtext =document.getElementById('maincourse');
+    const div =document.createElement('div');
+    div.innerHTML=`
+    <img style={margin:'2px auto'}  src=${img}/>
+    `;
+    divtext.innerText=' Congrats you have purchased your course  ';
+   divtext.appendChild(div)
+ }
+
     return (
-       <div> 
+       <div id="maincourse"> 
          <h1 className="italic text-3xl">Our most demandable courses in 2021 . </h1>
           <div className="flex justify-around">
         
@@ -43,7 +64,7 @@ const Body = () => {
           </div>
          <div>
          
-          <Checkout course={cart}> </Checkout>
+          <Checkout handlingcourse={handlingcourse} course={cart}> <button style={button} onClick={handlingcourse} className=""> Procced to checkout </button> </Checkout>
          </div>
         </div>
        </div>
