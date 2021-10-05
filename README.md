@@ -6,7 +6,10 @@
   1. This is an educational website .
   2. Completely created with react -router . 
   3. It is easy to use and time saving.
-   
+   4. I have added a simple checkout method for the courses of home page .
+   5. I have also added a contact page .
+   6. and I have a added dynamic route to the course details of 10 course but I have not given them their unique data . 
+   7. that is all. 
    #what you have to do to code in it :
     ### git pull 
     use this command on the github to edit my codes . 
