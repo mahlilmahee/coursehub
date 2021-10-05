@@ -7,44 +7,56 @@ import Footer from './Component/Footer/Footer';
 import None from './Component/None/None';
 import Courses from './Component/Courses/Courses';
 import About from './Component/About/About';
-import Checkout from './Component/Checkout/Checkout';
+import Reveiw from './Component/Review/Reveiw';
+import Details from './Details/Details';
+// import Checkout from './Component/Checkout/Checkout';
 function App() {
   return (
     <div className="App">
-     <BrowserRouter>
+     <BrowserRouter> 
+     <Header></Header>
+    
        <Switch>
           <Route exact path='/'>
-             <Header></Header>
+             
              <Body></Body>
-             <Footer></Footer>
+            
           </Route>
           <Route  path='/home'>
-             <Header></Header>
+            
              <Body></Body>
-             <Footer></Footer>
+          
           </Route>
           <Route path='/courses'>
-             <Header></Header>
+            
             <Courses></Courses>
-             <Footer></Footer>
+            
           </Route>
-          <Route  path='/checkout'>
-             <Header></Header>
-             <Checkout></Checkout>
-             <Footer></Footer>
+          <Route  path='/review'>
+            
+             {/* <Checkout></Checkout> */}
+             <Reveiw></Reveiw>
+             
+          </Route>
+          <Route path='/detail/:id'>
+             <Details></Details>
           </Route>
           <Route  path='/about'>
-             <Header></Header>
+            
              <About></About>
-             <Footer></Footer>
+            
           </Route>
+          
+         
           <Route   path='*'>
-             <Header></Header>
+           
              <None></None>
-             <Footer></Footer>
+            
           </Route>
+          
        </Switch>
-     </BrowserRouter>
+     </BrowserRouter> 
+     <Footer></Footer>
     </div>
   );
 }

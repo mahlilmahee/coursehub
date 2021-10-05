@@ -2,7 +2,8 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 
 const Course = (props) => {
-    const {course,img,price,time,tutor}=props.course;
+    const {course,img,price,Time,tutor,key}=props.course;
+   
     const style={
         margin:'50px auto',
         fontWeight:'900'
@@ -13,8 +14,10 @@ const Course = (props) => {
         width:'150px',
         heigth:'40px',
         borderRadius:'20px',
-        marginLeft:'5px'
+        margin:'5px',
+        padding:'5px'
     }
+    
     const history =useHistory();
     const handleCourse=()=>{
          history.push('/courses')
@@ -29,10 +32,10 @@ const Course = (props) => {
            <div>
            <h1> Course:{course}</h1>
             <h3> Price:{price}</h3>
-            <h3> Duration:{time}</h3>
+            <h3> Duration:{Time}</h3>
             <h1> Instructor:{tutor}</h1>
             <button style={button} onClick={handleCourse}>ALL Courses  </button>
-            <button style={button}> Add to cart </button>
+            <button style={button} onClick={()=>props.handleToCart(key)} > Add to cart </button>
            </div>
         </div>
         </div>

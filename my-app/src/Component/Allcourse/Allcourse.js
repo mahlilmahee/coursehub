@@ -1,7 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Allcourse = (props) => {
-    const {course,img,price,time,tutor}=props.course;
+    const {course,img,price,Time,tutor,id}=props.course;
+    // console.log(id);
+    // console.log(props.course)
     const style={
         margin:'50px auto',
         fontWeight:'900'
@@ -12,6 +15,10 @@ const Allcourse = (props) => {
         width:'150px',
         heigth:'40px',
         borderRadius:'20px'
+    }
+    const history =useHistory();
+    const detailsHandler=()=>{
+         history.push(`/detail/${id}`);
     }
    
     return (
@@ -24,9 +31,9 @@ const Allcourse = (props) => {
            <div>
            <h1> Course:{course}</h1>
             <h3> Price:{price}</h3>
-            <h3> Duration:{time}</h3>
+            <h3> Duration:{Time}</h3>
             <h1> Instructor:{tutor}</h1>
-            <button style={button} >Checkout   </button>
+            <button style={button} onClick={detailsHandler} > Full details   </button>
            </div>
         </div>
         </div>

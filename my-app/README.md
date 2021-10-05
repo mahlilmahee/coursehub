@@ -1,3 +1,18 @@
+# my website link click here:
+ ( https://distracted-dijkstra-988d61.netlify.app)
+  
+  # specialities about my website : 
+  1. This is an educational website .
+  2. Completely created with react -router . 
+  3. It is easy to use and time saving.
+   
+   #what you have to do to code in it :
+    ### git pull 
+    use this command on the github to edit my codes . 
+    ### git add .
+    to add all the changed file together at a command .
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
