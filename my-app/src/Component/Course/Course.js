@@ -31,7 +31,7 @@ const Course = (props) => {
            </div>
            <div>
            <h1> Course:{course}</h1>
-            <h3> Price:{price}</h3>
+            <h3> Price:$ {price}</h3>
             <h3> Duration:{Time}</h3>
             <h1> Instructor:{tutor}</h1>
             <button style={button} onClick={handleCourse}>ALL Courses  </button>
