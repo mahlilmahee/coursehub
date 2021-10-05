@@ -1,18 +1,20 @@
 import React from 'react';
 import img from '../../images/Teach_Yourself_logo.png';
-
+import imgs from '../../images/images (2).jpg'
 import { NavLink } from 'react-router-dom';
 import "./Header.css"
 const Header = () => {
-  const LinkColor={ fontWeight: "bold", color: "red"};
-  
+  const LinkColor={ fontWeight: "bold", color: "yellow"};
+ const  style={  backgroundImage: `url(${imgs})`}; 
     return (
-        <div className='background' className="flex justify-between p-8 bg-gray-400 items-center">
-          <div> 
+       <div style={style}>
+         <h3 className="text-2xl text-white"> Welcome to TeachYourself</h3>
+          <div className="flex justify-between p-8  items-center " >
+           <div> 
             <img   className="w-20 " src={img}/>
           </div>
           <div> 
-            <h1 className="font-extrabold"> Keep your pace with the world .</h1>
+            {/* <h1 className="font-extrabold text-2xl mb-20"> welcome to TeachYourself </h1> */}
           </div>
           <div className="text-white text-2xl ">
             
@@ -24,6 +26,7 @@ const Header = () => {
 
           </div>
         </div>
+       </div>
     );
 };
 
