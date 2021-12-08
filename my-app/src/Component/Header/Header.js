@@ -1,11 +1,12 @@
 import React from 'react';
 import img from '../../images/Teach_Yourself_logo.png';
-import imgs from '../../images/images (2).jpg'
+
+import headerimage from  '../../images/headeragain.jpg'
 import { NavLink } from 'react-router-dom';
 import "./Header.css"
 const Header = () => {
   const LinkColor={ fontWeight: "bold", color: "yellow"};
- const  style={  backgroundImage: `url(${imgs})`}; 
+ const  style={  backgroundImage: `url(${headerimage})`, height: '100%'}; 
     return (
        <div style={style}>
          <h3 className="text-2xl text-white"> Welcome to TeachYourself</h3>

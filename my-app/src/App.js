@@ -9,13 +9,15 @@ import Courses from './Component/Courses/Courses';
 import About from './Component/About/About';
 import Details from './Details/Details';
 import Contact from './Component/Review/Contact';
-
+import "tailwindcss/tailwind.css"
+import Navbar from './Component/Header/Navbar';
 // import Checkout from './Component/Checkout/Checkout';
 function App() {
   return (
     <div className="App">
      <BrowserRouter> 
-     <Header></Header>
+     <Navbar></Navbar>
+     {/* <Header></Header> */}
     
        <Switch>
           <Route exact path='/'>

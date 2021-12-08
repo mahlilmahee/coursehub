@@ -8,6 +8,7 @@ const Contact = () => {
    
     return (
         <div>
+            <h4 className="text-purple-600 "> Hello I am checking whether tailwind css is working here or not please cooperate with us , so that we can help you too.</h4>
            <div className='grid grid-cols-2 gap-4 items-center'> 
             <img src={img} /> 
             <div> 

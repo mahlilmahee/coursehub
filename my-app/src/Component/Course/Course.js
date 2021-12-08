@@ -35,7 +35,7 @@ const Course = (props) => {
             <h3> Duration:{Time}</h3>
             <h1> Instructor:{tutor}</h1>
             <button style={button} onClick={handleCourse}>ALL Courses  </button>
-            <button style={button} onClick={()=>props.handleToCart(key)} > Add to cart </button>
+            <button className="hover:bg-red-700" style={button} onClick={()=>props.handleToCart(key)} > Add to cart </button>
            </div>
         </div>
         </div>
