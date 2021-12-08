@@ -9,7 +9,7 @@ const Courses = () => {
         .then(data=>setCourses(data))
     },[])
     return (
-        <div>
+        <div id="abulbhai" >
             <h2 className="italic text-3xl"> Our top rated and latest courses for the learners . </h2>
             {
                 courses.map(course=><Allcourse course={course} key={course.key}></Allcourse>)

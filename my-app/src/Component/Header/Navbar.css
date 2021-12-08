@@ -21,3 +21,11 @@
     flex-grow: 1;
     margin-left: -280px;
 } */
+.linkgula{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.ami{
+    /* background-color: #f3bf32; */
+    background: linear-gradient(to left, rgb(194, 240, 201),rgb(160, 255, 131));
+}

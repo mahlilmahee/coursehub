@@ -4,6 +4,8 @@ import Checkout from '../Checkout/Checkout';
 import Course from '../Course/Course';
 import { addtoDataBase } from '../../Database/Database';
 import img from "../../images/divimgae.jpg";
+import Navbar from './../Header/Navbar';
+import Headerim from './../Header/Headerim';
 const Body = () => {
   const [cart,setCart]=useState([]);
     
@@ -53,6 +55,7 @@ const Body = () => {
 
     return (
        <div id="maincourse"> 
+      <Headerim></Headerim>
          <h1 className="italic text-3xl">Our most demandable courses in 2021 . </h1>
           <div className="flex justify-around">
         

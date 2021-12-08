@@ -21,7 +21,7 @@ function App() {
     
        <Switch>
           <Route exact path='/'>
-             
+          {/* <Navbar></Navbar> */}
              <Body></Body>
             
           </Route>

@@ -1,26 +1,32 @@
 import React from 'react';
 import img from '../../images/Teach_Yourself_logo.png'
+import Headerim from './Headerim';
+import './Navbar.css'
+import { NavLink } from 'react-router-dom';
 const Navbar = () => {
+    const LinkColor={ fontWeight: "bold", color: "white"};
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light ami " >
   <div class="container-fluid">
   <a class="navbar-brand" href="#">
-      <img src={img} alt="" width="30" height="24"/>
+      <img src={img} alt="" width="30" height="26"/>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link active" aria-current="page" href="#">Home</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
-        <a class="nav-link disabled">Disabled</a>
+      <div class="navbar-nav ms-auto linkgula ">
+        
+<NavLink className="ms-3" to="/home"activeStyle={LinkColor} >  Home</NavLink>
+<NavLink className="ms-3" to="/courses"activeStyle={LinkColor} href="abulbhai">  Courses</NavLink>
+<NavLink className="ms-3" to="/contact"activeStyle={LinkColor}> Contact  </NavLink>
+<NavLink className="ms-2" to="/about"activeStyle={LinkColor}> About us </NavLink>
       </div>
     </div>
   </div>
 </nav>
+{/* <Headerim></Headerim> */}
         </div>
     );
 };
