@@ -18,10 +18,10 @@ const Navbar = () => {
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto linkgula ">
         
-<NavLink className="ms-3" to="/home"activeStyle={LinkColor} >  Home</NavLink>
-<NavLink className="ms-3" to="/courses"activeStyle={LinkColor} href="abulbhai">  Courses</NavLink>
-<NavLink className="ms-3" to="/contact"activeStyle={LinkColor}> Contact  </NavLink>
-<NavLink className="ms-2" to="/about"activeStyle={LinkColor}> About us </NavLink>
+<NavLink className="ms-3 cursor-pointer" to="/home"activeStyle={LinkColor} >  Home</NavLink>
+<NavLink className="ms-3 cursor-pointer" to="/courses"activeStyle={LinkColor} href="abulbhai">  Courses</NavLink>
+<NavLink className="ms-3 cursor-pointer" to="/contact"activeStyle={LinkColor}> Contact  </NavLink>
+<NavLink className="ms-2 cursor-pointer" to="/about"activeStyle={LinkColor}> About us </NavLink>
       </div>
     </div>
   </div>

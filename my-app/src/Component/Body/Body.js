@@ -6,6 +6,8 @@ import { addtoDataBase } from '../../Database/Database';
 import img from "../../images/divimgae.jpg";
 import Navbar from './../Header/Navbar';
 import Headerim from './../Header/Headerim';
+import { Component } from 'react'
+import Typical from 'react-typical'
 const Body = () => {
   const [cart,setCart]=useState([]);
     
@@ -56,6 +58,21 @@ const Body = () => {
     return (
        <div id="maincourse"> 
       <Headerim></Headerim>
+      <h1 className="italic text-3xl"> 
+      <Typical
+        steps={['We Provide', 1000, 'We Provide the best courses ', 1000 ]}
+        loop={Infinity}
+        wrapper="p"
+      />
+      </h1>
+      <h1 className="italic text-3xl"> 
+      <Typical
+        steps={['plenty of teachers', 2000, ' Thank you ', 2000 ]}
+        loop={Infinity}
+        wrapper="p"
+      />
+      </h1>
+      
          <h1 className="italic text-3xl">Our most demandable courses in 2021 . </h1>
           <div className="flex justify-around">
         

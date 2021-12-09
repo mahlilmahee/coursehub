@@ -8,7 +8,7 @@ const Contact = () => {
    
     return (
         <div>
-            
+   
            <div className='grid grid-cols-2 gap-4 items-center'> 
             <img src={img} /> 
             <div> 
